@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    background-image: url("tasty-classic-traditional-italian-coffee-cappuccino-table-cafe-day-light-top-view-with-copy-space.jpg");
+    background-size: 380%;
+    background-repeat: no-repeat;
+    height: 150px;
+}
+footer{
+    padding-top: 50%;
+    height: 0.1vh;
+}
+.header{
+    background: rgb(203,169,148);
+    background: linear-gradient(90deg, rgba(203,169,148,1) 0%, rgba(97,61,17,1) 45%, rgba(73,45,35,1) 100%);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+    height: 120px;
+}
+.logout{
+    background-color: #e69e75;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    position: absolute;
+    margin-top: 0;
+    margin-left: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    height: 2%;
+    width: 12%;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    margin-left: 25px;
+}
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 50px;
+    width: 75%;
+    height: 60px;
+}
+.TITULO{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subtitulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 50px;
+    width: 75%;
+    height: 10px;
+}
+.encabezado{
+    width: 75%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FINAL{
+    background-color: #177aeb;
+    height: auto;
+    width: 100%;
+    margin-top: 100%;
+    line-height: 5px;
+}
+
+/*FUENTES DE TEXTO*/
+h1{ 
+    color: #eaeaea;
+    font-family: 'Secular One', sans-serif;
+    font-size: 4vw;
+}
+.font{ 
+    color: #000000;
+    font-family: 'Secular One', sans-serif;
+    font-size: 4vw;
+}
+h2{
+    color: #eaeaea;
+    font-family: 'Secular One', sans-serif;
+    font-size: 2vw;
+}
+h3{
+    font-family: 'Secular One', sans-serif;
+    font-size: 1.8vw;
+}
+h4{
+    font-family: 'Secular One', sans-serif;
+    font-size: 1.5vw;
+    color: #000000;
+}
+.Menu{/*Div para el menu*/
+    background-color: rgb(201, 155, 128);
+    display: flex;
+    align-items: center;
+    height: 7vw;
+    min-height: 40px;
+    width: 100%;
+}
+.menu{/*Lista para el menu*/
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    width: 100%;
+    
+}
+.menu li a{/*Hipervinculos de la lista*/
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  display: block;
+  padding: 5px;
+  text-align: center;
+  max-width:100%;
+}
+.menu li{
+  display: inline-block;
+  text-align:center;
+  width: 100%;
+}
+.menu li a:hover{
+  color: black;
+  background-color: #eaeaea;
+}
