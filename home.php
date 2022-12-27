@@ -38,24 +38,6 @@
            </ul>
         </div>
         <br><div class="TITULO"><h1 class="font">HOME</h1></div>
-        <?php 
-           //Conexion con la base de datos
-            $enlace = mysqli_connect ('127.0.0.1','root','Arturito8a*2000','cafeteriahtml'); //conexion a mysql
-            if(!$enlace)
-               die("SQLSTATE: Conexion fallida: " . mysql_error());
-           else
-               echo "SQLSTATE: Conexion exitosa";
-            
-            
-            $name = $_POST ['user_name'];
-            $direccion = $_POST ['user_loc'];
-            $tel = $_POST ['user_tel'];
-            $mail = $_POST ['user_mail'];
-            $ssql= "INSERT INTO clientes VALUES (default,'$name','$direccion','$tel','$mail')";
-            $resultado = mysqli_query($enlace, $ssql);
-            if(!$resultado )
-                die("No fue posible insertar los datos.");
-        ?>
         
         
     </body>
