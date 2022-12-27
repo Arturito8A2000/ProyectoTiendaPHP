@@ -49,7 +49,7 @@
         ?>
         <div class="TITULO"><h1 class="font">BIENVENID@</h1></div>
         <div class="TITULO"><h1 class="font">REGISTRATE AQUI</h1></div>
-        <form action="home.php" method="post">
+        <form action="login.php" method="post">
             <ul>
                 <li>
                     <label for="name">Nombre:</label>
