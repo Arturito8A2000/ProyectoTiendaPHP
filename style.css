@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-image: url("tasty-classic-traditional-italian-coffee-cappuccino-table-cafe-day-light-top-view-with-copy-space.jpg");
+    background-image: url("images/tasty-classic-traditional-italian-coffee-cappuccino-table-cafe-day-light-top-view-with-copy-space.jpg");
     background-size: 380%;
     background-repeat: no-repeat;
     height: 150px;
@@ -68,6 +68,10 @@ footer{
     justify-content: center;
     align-items: center;
 }
+.container label{
+    font-family: 'Secular One', sans-serif;
+    font-size: 0.5vw;
+}
 .FINAL{
     background-color: #177aeb;
     height: auto;
@@ -101,6 +105,7 @@ h4{
     font-size: 1.5vw;
     color: #000000;
 }
+
 .Menu{/*Div para el menu*/
     background-color: rgb(201, 155, 128);
     display: flex;

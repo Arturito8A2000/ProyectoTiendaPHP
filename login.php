@@ -10,12 +10,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css" type="text/css">
-        <link href="CAFE-removebg-preview.png" rel="icon" type="image/png">
+        <link href="images/CAFE-removebg-preview.png" rel="icon" type="image/png">
     </head>
     <body>
         <div class="header">
             <div class="logo">
-                <img src="CAFE-removebg-preview.png" width="60%">
+                <img src="images/CAFE-removebg-preview.png" width="60%">
             </div>
             <div class="encabezado">
                 <div class="titulo">
@@ -37,16 +37,16 @@
                 <li><a href="distribuidores.php"><h3>DISTRIBUIDORES</h3></a></li>
            </ul>
         </div>
-        <br><div class="TITULO"><h1 class="font">HOME<br>SESION INICIADA</h1></div>
         <?php 
-           //Conexion con la base de datos
+        //Conexion con la base de datos
             $enlace = mysqli_connect ('127.0.0.1','root','Arturito8a*2000','cafeteriahtml'); //conexion a mysql
             if(!$enlace)
                die("SQLSTATE: Conexion fallida: " . mysql_error());
            else
-               echo "SQLSTATE: Conexion exitosa";
-            
-            
+               echo '<h3 style="color:#00d100;line-height:0;margin-left:5px;">&#x25cf</h3>';
+        ?>
+        <br><div class="TITULO"><h1 class="font">HOME<br>SESION INICIADA</h1></div>
+        <?php 
             $name = $_POST ['user_name'];
             $direccion = $_POST ['user_loc'];
             $tel = $_POST ['user_tel'];
@@ -62,7 +62,7 @@
     <footer>
         <div class="container">
             <div class="FINAL">
-                <div class="container"><b><h4>BASES DE DATOS. PRACTICA 2</h4></b></div>
+                <div class="container"><b><h4>BASES DE DATOS. PROYECTO FINAL</h4></b></div>
                 <div class="container"><h4>INTEGRANTES</h4></div>
                 <div class="container"><h4>OCHOA MOLINA ELI ARTURO</h4></div>
                 <div class="container"><h4>OLIVA MARCO ANTONIO</h4></div>

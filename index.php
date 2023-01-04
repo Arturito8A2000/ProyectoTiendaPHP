@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <html>
     <head>   
         <meta charset="utf-8">
@@ -11,12 +10,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css" type="text/css">
-        <link href="CAFE-removebg-preview.png" rel="icon" type="image/png">
+        <link href="images/CAFE-removebg-preview.png" rel="icon" type="image/png">
     </head>
     <body>
         <div class="header">
             <div class="logo">
-                <img src="CAFE-removebg-preview.png" width="60%">
+                <img src="images/CAFE-removebg-preview.png" width="60%">
             </div>
             <div class="encabezado">
                 <div class="titulo">
@@ -44,39 +43,43 @@
                die("SQLSTATE: Conexion fallida: " . mysql_error());
            }
            else{
-               echo "SQLSTATE: Conexion exitosa";
-           }
+            echo '<h3 style="color:#00d100;line-height:0;margin-left:5px;">&#x25cf</h3>';
+        }
         ?>
         <div class="TITULO"><h1 class="font">BIENVENID@</h1></div>
         <div class="TITULO"><h1 class="font">REGISTRATE AQUI</h1></div>
-        <form action="login.php" method="post">
-            <ul>
-                <li>
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="user_name" name="user_name">
-                </li><br>
-                <li>
-                    <label for="apellido">Direccion:</label>
-                    <input type="text" id="user_loc" name="user_loc">
-                </li><br>
-                <li>
-                    <label for="mail">Telefono:</label>
-                    <input type="tel" id="user_tel" name="user_tel" maxlength="10" minlength="10">
-                </li><br>
-                <li>
-                    <label for="mail">Correo electrónico:</label>
-                    <input type="email" id="mail" name="user_mail">
-                </li>
-            </ul>
-            <div class="button">
-                <button type="submit">Registrarse</button>
+        <form action="login.php" method="post" style="margin-top: 50px;">
+            <div class="container">
+                <ul>
+                    <li>
+                        <label for="name" style="font-family:'Secular One',sans-serif;font-size:1.5vw;">Nombre:</label>
+                        <input type="text" id="user_name" name="user_name" size="30%">
+                    </li><br>
+                    <li>
+                        <label for="apellido" style="font-family:'Secular One',sans-serif;font-size:1.5vw;">Direccion:</label>
+                        <input type="text" id="user_loc" name="user_loc" size="30%">
+                    </li><br>
+                    <li>
+                        <label for="mail" style="font-family:'Secular One',sans-serif;font-size:1.5vw;">Telefono:</label>
+                        <input type="tel" id="user_tel" name="user_tel" maxlength="10" minlength="10" size="30%">
+                    </li><br>
+                    <li>
+                        <label for="mail" style="font-family:'Secular One',sans-serif;font-size:1.5vw;">Correo electrónico:</label>
+                        <input type="email" id="mail" name="user_mail" size="30%">
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <div class="button" style="margin-top: 5px;">
+                    <button type="submit">Registrarse</button>
+                </div>
             </div>
         </form>
     </body>
     <footer>
         <div class="container">
             <div class="FINAL">
-                <div class="container"><b><h4>BASES DE DATOS. PRACTICA 2</h4></b></div>
+                <div class="container"><b><h4>BASES DE DATOS. PROYECTO FINAL</h4></b></div>
                 <div class="container"><h4>INTEGRANTES</h4></div>
                 <div class="container"><h4>OCHOA MOLINA ELI ARTURO</h4></div>
                 <div class="container"><h4>OLIVA MARCO ANTONIO</h4></div>

@@ -11,12 +11,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css" type="text/css">
-        <link href="CAFE-removebg-preview.png" rel="icon" type="image/png">
+        <link href="images/CAFE-removebg-preview.png" rel="icon" type="image/png">
     </head>
     <body>
         <div class="header">
             <div class="logo">
-                <img src="CAFE-removebg-preview.png" width="60%">
+                <img src="images/CAFE-removebg-preview.png" width="60%">
             </div>
             <div class="encabezado">
                 <div class="titulo">
@@ -45,8 +45,8 @@
                die("SQLSTATE: Conexion fallida: " . mysql_error());
            }
            else{
-               echo "SQLSTATE: Conexion exitosa";
-           }
+            echo '<h3 style="color:#00d100;line-height:0;margin-left:5px;">&#x25cf</h3>';
+        }
         ?>
         <div class="TITULO"><h1 class="font">CLIENTES</h1></div><br>
         <?php
@@ -72,7 +72,7 @@
     <footer>
         <div class="container">
             <div class="FINAL">
-                <div class="container"><b><h4>BASES DE DATOS. PRACTICA 2</h4></b></div>
+                <div class="container"><b><h4>BASES DE DATOS. PROYECTO FINAL</h4></b></div>
                 <div class="container"><h4>INTEGRANTES</h4></div>
                 <div class="container"><h4>OCHOA MOLINA ELI ARTURO</h4></div>
                 <div class="container"><h4>OLIVA MARCO ANTONIO</h4></div>
