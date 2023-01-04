@@ -11,6 +11,19 @@
         <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css" type="text/css">
         <link href="images/CAFE-removebg-preview.png" rel="icon" type="image/png">
+        <script>
+            //Javascript para evitar INSERT vacio
+            function validateForm() {
+                var a = document.forms["form"]["user_name"].value;
+                var b = document.forms["form"]["user_loc"].value;
+                var c = document.forms["form"]["user_tel"].value;
+                var d = document.forms["form"]["user_mail"].value;
+                if ((a == "")||(b == "")||(c == "")||(d == "")) {
+                    alert("Por favor, llene correctamente los campos");
+                    return false;
+                }
+            }
+        </script>
     </head>
     <body>
         <div class="header">
@@ -65,33 +78,33 @@
                     mysqli_free_result($resultado);
             echo "</table>";
         ?><br>
-        <div class="container">
-            <form action="distribuidores_insert.php" method="post" >
+        <form name="form" action="distribuidores_insert.php" onsubmit="return validateForm()" style="margin-top: 50px;" method="post" required>
+            <div class="container">
                 <ul>
                     <li>
-                        <label for="apellido">Nombre:</label>
-                        <input type="text" id="name" name="user_name" size="30%">
+                        <label for="name" style="font-family:'Secular One',sans-serif;font-size:1.5vw;">Nombre:</label>
+                        <input type="text" id="user_name" name="user_name" size="30%">
                     </li><br>
                     <li>
-                        <label for="direccion">Direccion:</label>
-                        <input type="text" id="direccion" name="user_loc" size="25%">
+                        <label for="apellido" style="font-family:'Secular One',sans-serif;font-size:1.5vw;">Direccion:</label>
+                        <input type="text" id="user_loc" name="user_loc" size="30%">
                     </li><br>
                     <li>
-                        <label for="telefono">Telefono (10 digitos):</label>
-                        <input type="tel" id="tel" name="user_tel" minlength="10" maxlength="10" size="17%">
+                        <label for="mail" style="font-family:'Secular One',sans-serif;font-size:1.5vw;">Telefono (10 digitos):</label>
+                        <input type="tel" id="user_tel" name="user_tel" size="30%" minlength="10" maxlength="10">
                     </li><br>
                     <li>
-                        <label for="mail">Correo:</label>
+                        <label for="mail" style="font-family:'Secular One',sans-serif;font-size:1.5vw;">Correo electrónico:</label>
                         <input type="email" id="mail" name="user_mail" size="30%">
                     </li>
                 </ul>
-                <div class="container">
-                    <div class="button">
-                        <button type="submit" >Añadir</button>
-                    </div>
+            </div>
+            <div class="container">
+                <div class="button" style="margin-top: 5px;">
+                    <button type="submit">Registrarse</button>
                 </div>
-            </form>
-        </div>
+            </div>
+        </form>
 
     </body>
     <footer>

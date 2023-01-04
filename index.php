@@ -11,6 +11,18 @@
         <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css" type="text/css">
         <link href="images/CAFE-removebg-preview.png" rel="icon" type="image/png">
+        <script>//Javascript para evitar INSERT vacio
+            function validateForm() {
+                var a = document.forms["form"]["user_name"].value;
+                var b = document.forms["form"]["user_loc"].value;
+                var c = document.forms["form"]["user_tel"].value;
+                var d = document.forms["form"]["user_mail"].value;
+                if ((a == "")||(b == "")||(c == "")||(d == "")) {
+                    alert("Por favor, llene correctamente los campos");
+                    return false;
+                }
+            }
+        </script>
     </head>
     <body>
         <div class="header">
@@ -27,7 +39,7 @@
             </div>
         </div>
         
-        <div class="Menu">  <!--Nuevo cuadrante Bienvenida dentro de cabecera-->
+        <div class="Menu">
             <ul class="menu">
                 <li><h3>HOME</h3></li>
                 <li><h3>PASTELERIA</h3></li>
@@ -48,7 +60,7 @@
         ?>
         <div class="TITULO"><h1 class="font">BIENVENID@</h1></div>
         <div class="TITULO"><h1 class="font">REGISTRATE AQUI</h1></div>
-        <form action="login.php" method="post" style="margin-top: 50px;">
+        <form name="form" action="login.php" onsubmit="return validateForm()" style="margin-top: 50px;" method="post" required>
             <div class="container">
                 <ul>
                     <li>
@@ -60,8 +72,8 @@
                         <input type="text" id="user_loc" name="user_loc" size="30%">
                     </li><br>
                     <li>
-                        <label for="mail" style="font-family:'Secular One',sans-serif;font-size:1.5vw;">Telefono:</label>
-                        <input type="tel" id="user_tel" name="user_tel" maxlength="10" minlength="10" size="30%">
+                        <label for="mail" style="font-family:'Secular One',sans-serif;font-size:1.5vw;">Telefono (10 digitos):</label>
+                        <input type="tel" id="user_tel" name="user_tel" size="30%" minlength="10" maxlength="10">
                     </li><br>
                     <li>
                         <label for="mail" style="font-family:'Secular One',sans-serif;font-size:1.5vw;">Correo electrónico:</label>

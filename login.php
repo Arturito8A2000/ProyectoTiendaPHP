@@ -51,6 +51,8 @@
             $direccion = $_POST ['user_loc'];
             $tel = $_POST ['user_tel'];
             $mail = $_POST ['user_mail'];
+            echo strlen($tel);
+            echo ($tel);
             $ssql= "INSERT INTO clientes VALUES (default,'$name','$direccion','$tel','$mail')";
             $resultado = mysqli_query($enlace, $ssql);
             if(!$resultado )
